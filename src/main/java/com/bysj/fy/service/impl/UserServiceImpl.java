@@ -13,6 +13,14 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userDao;
+
+    /**
+     * 登录
+     *
+     * @param request
+     * @return
+     * @throws Exception
+     */
     @Override
     public boolean isLogin(HttpServletRequest request) throws Exception {
         System.out.println("==========>>");
