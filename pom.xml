@@ -135,6 +135,22 @@
 
   <build>
     <finalName>translate</finalName>
+      <resources>
+          <resource>
+              <directory>${basedir}/src/main/webapp</directory>
+              <targetPath>META-INF/resources</targetPath>
+              <includes>
+                  <include>**/**</include>
+              </includes>
+          </resource>
+          <resource>
+              <directory>src/main/resources</directory>
+              <filtering>false</filtering>
+              <includes>
+                  <include>**/**</include>
+              </includes>
+          </resource>
+      </resources>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
         <plugin>

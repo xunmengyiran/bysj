@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/login")
+    @RequestMapping("/login.do")
     public String login(HttpServletRequest request ){
         try {
             userService.isLogin(request);

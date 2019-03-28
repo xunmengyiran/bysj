@@ -12,6 +12,9 @@
     <title>登录模板</title>
 
     <link href="/css/main.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jQuery.js"></script>
+    <script type="text/javascript" src="/js/fun.base.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
 
 </head>
 <body>
@@ -37,10 +40,6 @@
     <div class="air-balloon ab-2 png"></div>
     <div class="footer"></div>
 </div>
-
-<script type="text/javascript" src="js/jQuery.js"></script>
-<script type="text/javascript" src="js/fun.base.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>
