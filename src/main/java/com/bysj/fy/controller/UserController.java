@@ -15,12 +15,68 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping("/login.do")
-    public String login(HttpServletRequest request ){
+    public String login(HttpServletRequest request) {
+        boolean flag = false;
         try {
-            userService.isLogin(request);
+            flag = userService.isLogin(request);
         } catch (Exception e) {
             e.printStackTrace();
         }
+        if (flag){
+            return "index";
+        }else {
+            return "login";
+        }
+    }
+
+    @RequestMapping("/goToLogin.do")
+    public String goToLogin() {
+        return "login";
+    }
+
+    /**
+     * 首页
+     * @return
+     */
+    @RequestMapping("/goToIndex.do")
+    public  String goToIndex() {
         return "index";
     }
+
+    /**
+     * 注销
+     * @param request
+     * @return
+     */
+    @RequestMapping("/logOut.do")
+    public String logOut(HttpServletRequest request){
+        request.getSession().setAttribute("userName",null);
+        return "login";
+    }
+
+    @RequestMapping("/goToRegist.do")
+    public String goToRegist() {
+        return "regist";
+    }
+
+    /**
+     * 注册
+     * @param request
+     * @return
+     */
+    @RequestMapping("/regist.do")
+    public String regist(HttpServletRequest request){
+        boolean flag = false;
+        try {
+            flag = userService.logOut(request);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+         if (flag){
+             return  "login";
+         }else{
+             return  "";
+         }
+    }
+
 }

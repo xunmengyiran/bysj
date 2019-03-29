@@ -1,0 +1,97 @@
+body, h1, h2, h3, h4, h5, h6, hr, blockquote, dl, dt, dd, ul, ol, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0;}
+.clear { clear:both; font-size:0px; height:0px;}
+.clearfix { *zoom:1;}
+a{color:#acacac;text-decoration:none;}
+a:hover{color:green;}
+.clearfix:after { display:block; height:0; visibility:hidden; content:""; clear:both;}
+
+/*首页布局*/
+body{background: #e2ded2 url(../images/bg-over.png);}
+#header{width:990px;margin:0 auto;}
+#banner{width:990px;margin: 0 auto;}
+#content{width:990px;margin: 0 auto;margin-top:40px;margin-bottom:20px;
+background:#fff;}
+#footer{height:180px;background-color:#fafafa;}
+
+/*--------------------------------------------------header--------------------------------------------------------------*/
+#logo{width:61px;float:left;margin-left:50px;}
+#botton{float:right;margin-right:50px;}
+#navigate{width:600px;margin-left:800px;}
+
+/*--------------------------------------------------导航条--------------------------------------------------------------*/
+ul,li{list-style: none;}
+#MutiNav {font-size:13px;color:#000;background:#153134 url(../images/bg-divider.png);;z-index:1000;position:relative;height:50px; }
+#nav{width:1030px;margin:0 auto;padding-left:40px;}
+#MutiNav A {text-decoration: none;margin:0 auto;}
+.multiUl LI {display:block; float:left;line-height:50px; position: relative;}
+.multiUl LI A.go{ padding-right: 60px; display: inline-block; padding-left: 60px;margin: 0px 20px;color: #edf7ea; }
+#MutiNav .multiUl LI BLOCKQUOTE {DISPLAY: none; POSITION: absolute; }
+.ChildNavIn {background:#153134 url(../images/bg-over.png) ;OVERFLOW: hidden; WIDTH: 200px; PADDING-TOP: 10px;TEXT-ALIGN: center}
+.ChildNavIn A {PADDING-RIGHT: 4px; DISPLAY: inline; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 3px 0px 3px 6px; WIDTH: 80%;  COLOR: #dee6e9; LINE-HEIGHT: 18px; PADDING-TOP: 2px; BORDER-BOTTOM: #255f51 1px dotted; }
+#MutiNav .multiUl LI BLOCKQUOTE A:hover {BACKGROUND: #2c705f; COLOR: #fefbc2! important}
+
+/*--------------------------------------------------content--------------------------------------------------------------*/
+/*content-left*/
+#content_left{width:580px;float:left;padding-top:40px;margin-left:20px;}
+#top,#xia1;#xia2{margin-top:50px;}
+#middle{margin-top:20px;}
+#xia{margin-top:230px;}
+.aaa{margin-top:20px;float:left;}
+.bbb{margin-top:0px;margin-left:0px; }
+.text1{width:375px;float:right;margin-top:-150px;}
+.text{width:375px;float:right;margin-top:30px;}
+#xljt{width:575px;float:left;border-top:dashed #acacac;margin-left:25px;}
+#xljt_text{width:380px;float:right;margin-top:40px;}
+span a{font-size:18px;color:#333;}
+p{font-size:13px; color: #acacac;}
+span a:hover{ color:#f19100; text-decoration:none;}
+/*content-right*/
+#content_right1{width:360px;height:250px;float:right;margin-right:20px;background:url(../images/Cc.PNG);margin-top:30px;}
+.tool{list-style:none;width:275px; margin-left:45px; margin-top:95px;}
+.tool li{ height:20px;width:90px;float:left;border-bottom:1px solid #dfdfdf;text-align:center;padding-top:40px;border-right:1px solid #dfdfdf;font-size:12px;}
+.tool li.l1{background:url(../images/5-1.PNG) no-repeat 30px top; }
+.tool li.l2{background:url(../images/5-2.png)no-repeat 30px top;}
+.tool li.l3{background:url(../images/5-3.png)no-repeat 30px top;}
+.tool li.l4{background:url(../images/5-4.png)no-repeat 30px top;}
+.tool li.l5{background:url(../images/5-5.png)no-repeat 30px top;}
+.tool li.l6{background:url(../images/5-6.png)no-repeat 30px top;}
+#content_right2{width:330px;height:330px;float:right;background:url(../images/Cc.PNG)  no-repeat ;padding-left:30px;padding-top:60px;margin-top:30px;margin-right:20px;}
+#content_right2 p{width:300px;margin:0 auto;line-height:1.6;padding-top:16px ;padding-left:4px;}
+
+#rcon{width:360px;float:right;margin-right:10px;background:url(../images/Ce.PNG) no-repeat;margin-top:50px;}
+.sudi{margin-top:70px;}
+.sudi li{font-size:14px; padding-bottom:10px;padding-left:30px;}
+.sudi li a:hover{ color:#f19100; text-decoration:none;}
+
+/************************************************************footer*********************************************************/
+.foot_con{width:600px;margin:0 auto;  height:100px;padding-top:30px;}
+.color-section{ background:#153134 url(../images/bg-over.png);}
+.foot_con p{ padding-left:60px; margin-top:30px;}
+
+
+/******************************************************首页图片切换特效********************************************************/
+#slider-wrapper {position:relative; z-index:1;margin-top:20px;}
+.slider_border {width:678px; height:310px; position:absolute;  z-index:51;}
+#slider {position:relative; width:678px; height:311px; background:url(loading.gif) no-repeat 50% 50%; border:4px solid #EDECD9; box-shadow:0 3px 4px rgba(0,0,0,0.25); margin:auto;}
+#slider img {position:absolute; top: 0px; left:0px; display: none; width:678px !important; height:250px;}
+#slider a {border:0; display:block;}
+.nivoSlider {position:relative;}
+.nivoSlider img {position:absolute; top:0px; left:0px;}
+.nivoSlider a.nivo-imageLink {position:absolute; top:0px; left:0px; width:100%; height:100%; border:0; padding:0; margin:0; z-index:60; display:none;}
+.nivo-slice {display:block; position:absolute; z-index: 50; height: 100%;}
+.nivo-box {display:block; position:absolute; z-index: 5;}
+.nivo-caption {position:absolute; left:20px; bottom:20px; background:#3599BA; text-shadow:none; color:#FFF; opacity: 0.5; z-index:89; padding:10px;}
+.nivo-caption p {line-height:17px; font-size:15px; text-shadow:1px 1px 3px rgba(0,0,0,0.5);}
+.nivo-caption p::selection {background: #fff; color: #000;}
+.nivo-caption p::-moz-selection {background: #fff; color: #000;}
+.nivo-caption a {display: inline !important;}
+.nivo-html-caption {display: none;}
+.nivo-directionNav a {position:absolute; top:50%; margin-top:-40px; z-index:99; cursor:pointer; display:block; text-indent:-9999em; width:40px; height:80px;}
+a.nivo-prevNav {left:-4px; background:url(slider_previous.png) no-repeat;}
+a.nivo-nextNav {right:-4px; background:url(slider_next.png) no-repeat;}
+#slider .nivo-controlNav {position:absolute; bottom:-40px; text-align:center; z-index: 999; width:100%;}
+#slider .nivo-controlNav a {z-index:999; display:inline-block; cursor:pointer; width:30px; height:5px; margin:0 3px; background-color:#f3efe9; border:1px solid #d3d1a5; text-indent: -9999em;}
+#slider .nivo-controlNav a.active {font-weight: bold; background-color:#3599BA; border:1px solid #edecd9; }
+
+
+

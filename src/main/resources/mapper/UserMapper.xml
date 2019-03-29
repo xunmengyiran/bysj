@@ -4,8 +4,12 @@
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="com.bysj.fy.dao.UserDao">
 
-    <select id="isLogin" parameterType="java.lang.String" resultType="java.lang.Integer" >
-        select count(0) from tb_user where userName=#{userName} and password =#{password}
+    <select id="isLogin" parameterType="java.lang.String" resultType="com.bysj.fy.bean.User" >
+        select * from tb_user where userName=#{userName} and password =#{password}
     </select>
+
+    <insert id="logOut" parameterType="java.lang.String">
+        insert tb_user (userName,password,telPhone,createTime) values (#{userName},#{password},#{telPhone},#{createDate})
+    </insert>
 
 </mapper>
