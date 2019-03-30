@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '微软雅黑';
+    font-size: 13px;
+    line-height: 1.6em;
+    color: #656565;
+    background: #f5f5f5;
+}
+
+h2 {
+    font-weight: 600;
+    color: #252525;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 20px;
+    color: #666
+}
+
+a {
+    text-decoration: none;
+    color: #acacac;
+}
+
+a:hover {
+    color: green;
+}
+
+.clear {
+    clear: both;
+    font-size: 0px;
+    height: 0px;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "";
+    clear: both;
+}
+
+/****************************************************foots*****************************************************************/
+
+/*contant*/
+
+/*footer*/
+#footer {
+    width: 100%;
+    height: 180px;
+    background-color: #153134;
+    height: 200px;
+}
+
+.foot_con {
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.foot_con p {
+    padding-left: 60px;
+    margin-top: 30px;
+}
+
+/****************************************************login*****************************************************************/
+#banner1, #banner2 {
+    width: 100%;
+    height: 640px;
+    position: relative;
+    background: url(../images/slide1.jpg);
+    background-size: 100% 100%;
+}
+
+#banner1-left {
+    width: 70%;
+    height: 600px;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+
+#banner1-left-txt {
+    width: auto;
+    padding-top: 300px;;
+}
+
+#banner1-left-txt p {
+    font: bold 30px "幼圆";
+}
+
+#banner1-right {
+    width: 22%;
+    float: right;
+    margin-top: 130px;
+    margin-right: 90px;
+    height: 400px;
+    background: #fff;
+    opacity: 0.55;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#login {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+.txt {
+    height: 30px;
+    width: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.2) !important;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.login_btn {
+    margin-left: 65px;
+    display: block;
+    background: url(../images/login.jpg) no-repeat 0 0;
+    width: 224px;
+    height: 46px;
+    opacity: 0.8;
+}
+
+.regist_btn {
+    margin-left: 65px;
+    display: block;
+    background: url(../images/regist.jpg) no-repeat 0 0;
+    width: 224px;
+    height: 46px;
+    opacity: 0.8;
+}
+
+a.regist_btn:link {
+    display: block;
+    background: url(../images/regist.jpg) no-repeat 0 0;
+    width: 224px;
+    height: 46px;
+}
+
+a.regist_btn:hover {
+    opacity: 0.8;
+}
+
+#login ul li {
+    list-style: none;
+}
+
+/****************************************************nav*****************************************************************/
+.main-navigation {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    float: right;
+}
+
+.main-navigation li {
+    margin-left: 5px;
+    display: inline;
+}
+
+.main-navigation li a {
+    padding-left: 25px;
+    text-shadow: 2px 2px 0 #153134, 3px 3px 0 #000;
+    text-transform: capitalize;
+    color: #b9b9ba;
+    font-size: 17px;
+    text-align: center;
+    font-weight: 400;
+    background: url(../images/star-menu.png) 0 12px no-repeat;
+}
+
+.main-navigation li a:hover {
+    text-shadow: 2px 2px 0 #153134, 3px 3px 0 #000;
+    color: #e8e8e8;
+    background: url(../images/star-menu-over.png) 0 12px no-repeat;
+}
+
+.main-navigation li a.current {
+    text-shadow: 2px 2px 0 #153134, 3px 3px 0 #000;
+    color: #e8e8e8;
+    background: url(../images/star-menu-over.png) 0 12px no-repeat;
+}
+
+/****************************************************foot*****************************************************************/
+#header {
+    background: #153134 url(../images/bg-divider.png) repeat-x;
+    width: 100%;
+    height: 83px;
+    position: fixed;
+    z-index: 1000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner, #portfolio, .color-section {
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner {
+    background: #e2ded2 url(../images/bg-over.png)
+}
+
+.container h2 {
+    font: bold 35px "宋体";
+}
+
+.color-section {
+    background: #153134 url(../images/bg-over.png);
+}
+
+.divider-sections {
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    background: #b73b04 url(../images/bg-divider.png) repeat-x;
+}
+
+#top {
+    padding: 10px;
+    text-align: center;
+}
+
+#bottom {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+#left {
+    width: 30%;
+    float: left;
+}
+
+#middle {
+    width: 31%;
+    float: left;
+    margin-left: 60px;
+}
+
+#right {
+    width: 30%;
+    float: right;
+}
+
+.back {
+    background: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+.back1 {
+    width: 70%;
+    float: right;
+    line-height: 2em;
+    margin-right: 30px;
+}
+
+/*图片特性*/
+#featured-area {
+    height: 380px;
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.roundabout-holder {
+    list-style: none;
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+}
+
+.roundabout-moveable-item {
+    font-size: 12px !important;
+    height: 350px;
+    width: 800px;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #aaaaaa;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.roundabout-moveable-item img {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.roundabout-in-focus {
+    cursor: auto;
+}
+
+.roundabout-in-focus:hover {
+    -webkit-box-shadow: 0px 0px 20px #787878;
+    -moz-box-shadow: 0px 0px 20px #787878;
+    background: #f9f9f9;
+}
+
+.roundabout-holder span {
+    display: none;
+}
+
+.roundabout-in-focus:hover span {
+    display: inline;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    padding: 8px 20px;
+    background: #f9f9f9;
+    color: #3366cc;
+    z-index: 999;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-radius-topLeft: 5px;
+    border-left: 1px solid #aaaaaa;
+    border-top: 1px solid #aaaaaa;
+}
+
+.roundabout a:active, .roundabout a:focus, .roundabout a:visited {
+    outline: none;
+    text-decoration: none;
+}
+
+.roundabout li {
+    margin: 0
+}
+
+.porto-entry h3 {
+    margin: 10px 0 5px 0;
+    text-transform: uppercase;
+    color: #153134;
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #a9a9a8;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.porto-entry p {
+    font-size: 15px;
+}
+
+/****************************************************word*****************************************************************/
+.form-control {
+    height: 20px;
+    width: 500px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.btn-primary {
+    height: 20px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.fanyi {
+    height: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.fanyik {
+    height: 50px;
+    margin-left: 500px;
+    margin-top: 40px;
+}
+
+.form-control1 {
+    height: 50px;
+    width: 580px;
+    margin-left: 135px;
+    margin-top: 25px;
+}
+
+/* .input-wrap{min-height: 84px;padding: 10px 10px 43px; background-color: #fff;position: relative;}
+.textarea-wrap.without-textarea-bg {margin-right: 35px;}
+.textarea-bg {z-index: 1;}
+.textarea-bg-text {z-index: 2;color: #fdfdfd;font-family: Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+.textarea { font-family: Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+.textarea-clear-btn, .follow-weibo-btn, .mobile-link, .follow-weixin-btn, .contact-us-btn, .fdialog-close {
+    background-image: url(//fanyi.bdstatic.com/static/translation/pkg/index_z_15cc24c.png);
+}
+a.textarea-clear-btn {
+    background-position: -20px -10px;
+}
+a.textarea-clear-btn {
+    float: right;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    display: none;
+    background-repeat: no-repeat;
+} */
+
+/****************************************************Grammar*****************************************************************/
+.form-control2 {
+    height: 80px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.input-group1 {
+    height: 80px;
+    width: 300px;
+    margin-left: 300px;
+    margin-top: 35px;
+}
+
+.container1 {
+}
+
+.fanyi1 {
+    height: 250px;
+    margin-left: 10px;
+    margin-right: 250px;
+    float: right;
+    margin-top: -80px;
+}
+
+.form-control3 {
+    height: 130px;
+    width: 500px
+}
