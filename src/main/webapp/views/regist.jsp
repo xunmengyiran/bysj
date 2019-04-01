@@ -14,8 +14,8 @@
 </head>
 <body>
      <script>
-         function logOut() {
-             document.getElementById("logOut").submit();
+         function regist() {
+             document.getElementById("regist").submit();
          }
 
      </script>
@@ -29,12 +29,12 @@
 
     <div id="banner1-right" >
         <h2>Regist</h2>
-        <form id="logOut" action="/user/regist.do" method="post">
+        <form id="regist" action="/user/regist.do" method="post">
             <ul>
                 <li>用户名:<br/><br/><input type="text" id="userName" name="userName" class="txt"> <hr><br/></li>
                 <li>密&nbsp;&nbsp;&nbsp;码:<br/><br/><input type="password" id="password" name="password" class="txt" > <hr><br/><br/></li>
                 <li>手&nbsp;&nbsp;&nbsp;机&nbsp;&nbsp;&nbsp;号:<br/><br/><input type="phone" id="telPhone" name="telPhone" class="txt" > <hr><br/><br/></li>
-                <li><a class="regist_btn" onclick="logOut()"></a></li>
+                <li><a class="regist_btn" onclick="regist()"></a></li>
             </ul>
         </form>
     </div>

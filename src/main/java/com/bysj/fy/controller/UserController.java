@@ -1,11 +1,13 @@
 package com.bysj.fy.controller;
 
+import com.bysj.fy.bean.User;
 import com.bysj.fy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 
 @Controller
@@ -50,7 +52,12 @@ public class UserController {
      */
     @RequestMapping("/logOut.do")
     public String logOut(HttpServletRequest request){
-        request.getSession().setAttribute("userName",null);
+        HttpSession session = request.getSession();
+        User user = (User) session.getAttribute("user");
+        if(user == null){
+            return "login";
+        }
+        request.getSession().removeAttribute("user");
         return "login";
     }
 
@@ -68,7 +75,7 @@ public class UserController {
     public String regist(HttpServletRequest request){
         boolean flag = false;
         try {
-            flag = userService.logOut(request);
+            flag = userService.regist(request);
         }catch (Exception e){
             e.printStackTrace();
         }

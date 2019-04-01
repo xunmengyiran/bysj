@@ -45,8 +45,8 @@
 <div id="MutiNav">
     <div id="nav" >
         <ul class="multiUl">
-            <li><a class="go" href="#">首&nbsp;&nbsp;页</a></li><li >|</li>
-            <li><a class="go" href="Word.html" >单&nbsp;&nbsp;词&nbsp;&nbsp;小&nbsp;&nbsp;课&nbsp;&nbsp;堂</a>
+            <li><a class="go" href="/user/goToIndex.do">首&nbsp;&nbsp;页</a></li><li >|</li>
+            <li><a class="go" href="/study/goToStudyWord.do" >单&nbsp;&nbsp;词&nbsp;&nbsp;小&nbsp;&nbsp;课&nbsp;&nbsp;堂</a>
                 <blockquote>
                     <div class="ChildNavIn">
                         <a  href="#">我&nbsp;&nbsp;的&nbsp;&nbsp;词&nbsp;&nbsp;书</a>
@@ -56,7 +56,7 @@
                 </blockquote>
             </li>
             <li >|</li>
-            <li><a class="go" href="Grammar.html" >语&nbsp;&nbsp;法&nbsp;&nbsp;小&nbsp;&nbsp;课&nbsp;&nbsp;堂</a>
+            <li><a class="go" href="/study/goToStudyGrammar.do" >语&nbsp;&nbsp;法&nbsp;&nbsp;小&nbsp;&nbsp;课&nbsp;&nbsp;堂</a>
                 <blockquote>
                     <div class="ChildNavIn">
                         <a  href="#">语&nbsp;&nbsp;法&nbsp;&nbsp;翻&nbsp;&nbsp;译</a>
@@ -65,7 +65,7 @@
                 </blockquote>
             </li>
             <li >|</li>
-            <li><a class="go" href="Test.html" >随&nbsp;&nbsp;堂&nbsp;&nbsp;测&nbsp;&nbsp;试</a>
+            <li><a class="go" href="/test/goToTestPage.do" >随&nbsp;&nbsp;堂&nbsp;&nbsp;测&nbsp;&nbsp;试</a>
                 <blockquote>
                     <div class="ChildNavIn">
                         <a href="#">开&nbsp;&nbsp;始&nbsp;&nbsp;闯&nbsp;&nbsp;关</a>
@@ -74,7 +74,7 @@
                 </blockquote>
             </li>
             <li >|</li>
-            <li><a class="go" href="Result.html" >成&nbsp;&nbsp;绩&nbsp;&nbsp;分&nbsp;&nbsp;析</a></li>
+            <li><a class="go" href="/test/goToGradePage.do" >成&nbsp;&nbsp;绩&nbsp;&nbsp;分&nbsp;&nbsp;析</a></li>
         </ul>
         <script type="text/javascript">
 
@@ -195,11 +195,11 @@
 <div id="footer" >
     <div class="color-section">
         <div class="foot_con" style="height:150px">
-            <a href="#">首页</a> |
-            <a href="#" >单词小课堂</a> |
-            <a href="#" >语法小课堂</a> |
-            <a href="#" >随堂测试</a> |
-            <a href="#">成绩分析</a>
+            <a href="/user/goToIndex.do">首页</a> |
+            <a href="/study/goToStudyWord.do" >单词小课堂</a> |
+            <a href="/study/goToStudyGrammar.do" >语法小课堂</a> |
+            <a href="/test/goToTestPage.do" >随堂测试</a> |
+            <a href="/test/goToGradePage.do">成绩分析</a>
             <p> Copyright&#169; 2010-2017  英语 &nbsp;&nbsp;&nbsp;Love </p>
             <p>@study  English </p>
         </div>

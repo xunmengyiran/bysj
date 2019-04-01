@@ -8,7 +8,7 @@ import net.sf.json.JSONObject;
 import java.util.List;
 import java.util.Map;
 
-public class util {
+public class Util {
 
     public static String Trans(String from,String to,String content){
         TransApi api = new TransApi(Constants.BAIDU_INFO.APP_ID, Constants.BAIDU_INFO.SECURITY_KEY);
@@ -22,8 +22,8 @@ public class util {
 
     public static void main(String[] args) {
 
-        String st = "I love you !";
+        String st = "我爱你 !";
 
-        System.out.println(Trans("en","zh",st));
+        System.out.println(Trans("auto","zh",st));
     }
 }

@@ -40,14 +40,14 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * 注销
+     * 注册
      *
      * @param request
      * @return
      * @throws Exception
      */
     @Override
-    public boolean logOut(HttpServletRequest request) throws  Exception {
+    public boolean regist(HttpServletRequest request) throws  Exception {
         String userName = request.getParameter("userName");
         String password = request.getParameter("password");
         String telPhone = request.getParameter("telPhone");
@@ -56,7 +56,7 @@ public class UserServiceImpl implements UserService {
         //获取String类型的时间
         String createDate = sdf.format(now);
 
-        int id = userDao.logOut(userName,password,telPhone,createDate);
+        int id = userDao.regist(userName,password,telPhone,createDate);
         if (id > 0){
             return  true;
         }else{

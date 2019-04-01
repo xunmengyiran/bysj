@@ -8,8 +8,16 @@
         select * from tb_user where userName=#{userName} and password =#{password}
     </select>
 
-    <insert id="logOut" parameterType="java.lang.String">
+    <insert id="regist" parameterType="java.lang.String">
         insert tb_user (userName,password,telPhone,createTime) values (#{userName},#{password},#{telPhone},#{createDate})
     </insert>
+
+    <update id="saveGrade" parameterType="java.lang.Integer">
+        update tb_user set grade = #{grade} where id=#{id}
+    </update>
+
+    <select id="getGrade" parameterType="java.lang.Integer" resultType="java.lang.Integer" >
+        select grade from tb_user where id=#{id}
+    </select>
 
 </mapper>
