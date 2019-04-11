@@ -25,10 +25,8 @@ public class UserServiceImpl implements UserService {
      * @throws Exception
      */
     @Override
-    public boolean isLogin(HttpServletRequest request) throws Exception {
+    public boolean isLogin(HttpServletRequest request,String userName,String password) throws Exception {
         System.out.println("==========>>");
-        String userName = request.getParameter("userName");
-        String password = request.getParameter("password");
         User user = userDao.isLogin(userName,password);
 //        System.out.println("count"+count);
         if(user != null && !"".equals(user)) {

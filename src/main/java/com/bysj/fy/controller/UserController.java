@@ -2,12 +2,18 @@ package com.bysj.fy.controller;
 
 import com.bysj.fy.bean.User;
 import com.bysj.fy.service.UserService;
+import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @Controller
@@ -16,19 +22,30 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/login.do")
-    public String login(HttpServletRequest request) {
+    @PostMapping("/login")
+    public void login(HttpServletRequest request, HttpServletResponse response,String userName,String password) {
+        response.setCharacterEncoding("UTF-8");
+        PrintWriter pw =null;
         boolean flag = false;
+        Map<String,Object> resultMap = new HashMap<String,Object>();
         try {
-            flag = userService.isLogin(request);
+            flag = userService.isLogin(request,userName,password);
+            pw = response.getWriter();
+            if (flag){
+                resultMap.put("flag",true);
+            }else {
+                resultMap.put("flag",false);
+                resultMap.put("msg","账号密码不匹配，请重新输入！");
+            }
+            JSONObject jsonObject = JSONObject.fromObject(resultMap);
+            pw.write(jsonObject.toString());
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            pw.flush();
+            pw.close();
         }
-        if (flag){
-            return "index";
-        }else {
-            return "login";
-        }
+
     }
 
     @RequestMapping("/goToLogin.do")

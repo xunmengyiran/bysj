@@ -10,14 +10,45 @@
 <head>
     <meta charset="UTF-8">
     <link href="/styles/efg2.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.roundabout-1.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
     <title>Login</title>
 </head>
 <body>
   <script>
       function login() {
-          console.log("eeeeeeeeeeeeee");
-          console.log(document.getElementById("login").action);
-          document.getElementById("login").submit();
+          var userName = $("#userName").val();
+          var password = $("#password").val();
+          if(userName == ""){
+              alert("请输入用户名!");
+              $("#userName").focus();
+              return;
+          }
+          if(password == ""){
+              alert("请输入密码!");
+              $("#password").focus();
+              return;
+          }
+          $.ajax({
+              type: "POST",
+              url: "/user/login.do",
+              data: {
+                  userName: userName,
+                  password: password
+              },
+              dataType: 'json',
+              success: function (data) {
+                  if (data.flag) {
+                      window.location.href="/user/goToIndex.do";
+                  } else {
+                      alert(data.msg);
+                  }
+              },
+              error: function () {
+                  alert("网络错误!")
+              }
+          });
       }
   </script>
 <div id="banner1">
@@ -37,6 +68,5 @@
         </form>
     </div>
 </div>
-
 </body>
 </html>

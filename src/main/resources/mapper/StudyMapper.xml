@@ -8,6 +8,6 @@
         SELECT ch from tb_word where en=#{inputValue}
     </select>
     <select id="tanslateGrammar" parameterType="java.lang.String" resultType="java.lang.String">
-        SELECT ch from tb_grammar where en=#{inputValue}
+        SELECT explainValue from tb_grammar where keywords=#{inputValue}
     </select>
 </mapper>

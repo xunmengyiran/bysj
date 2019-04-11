@@ -15,6 +15,15 @@
 <body>
      <script>
          function regist() {
+             var password = document.getElementById("password").value;
+             var confirmPassword = document.getElementById("confirmPassword").value;
+             if(password != confirmPassword){
+                 alert("两次输入的密码不一致，请重新输入！");
+                 document.getElementById("password").value = "";
+                 document.getElementById("confirmPassword").value = ""
+                 document.getElementById("password").focus();
+                 return;
+             }
              document.getElementById("regist").submit();
          }
 
@@ -33,6 +42,7 @@
             <ul>
                 <li>用户名:<br/><br/><input type="text" id="userName" name="userName" class="txt"> <hr><br/></li>
                 <li>密&nbsp;&nbsp;&nbsp;码:<br/><br/><input type="password" id="password" name="password" class="txt" > <hr><br/><br/></li>
+                <li>确认密码:<br/><br/><input type="password" id="confirmPassword" name="confirmPassword" class="txt" > <hr><br/><br/></li>
                 <li>手&nbsp;&nbsp;&nbsp;机&nbsp;&nbsp;&nbsp;号:<br/><br/><input type="phone" id="telPhone" name="telPhone" class="txt" > <hr><br/><br/></li>
                 <li><a class="regist_btn" onclick="regist()"></a></li>
             </ul>
